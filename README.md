@@ -14,7 +14,7 @@ After toying around with this problem for hours, below are some conclusions I've
 
 - **Back up your files.** No matter what you do, it's a good idea to back up the `Album` and `save` folders found in the `Nintendo` folder of your memory card first. Don't bother copying `Contents`: as mentioned above, that folder contains the downloaded software and is always cleared before using a new memory card.
 
-- **Use _switchcp.bat_ to copy files.** I wrote a batch file for Windows which you can use to copy files between two memory cards. Or, if you need to, you can use the script to copy the files from your old card to the hard drive, then from the hard drive to your new card. To use it:
+- **Use _switchcp.bat_ to copy files.** I wrote a batch file for Windows which you can use to copy files between two memory cards. Or, if you need to, you can use the script to copy the files from your old card to the hard drive, then from the hard drive to your new card. It works by creating new folders instead of copying them as is, as doing the latter could carry over metadata that would render the folders unusuable on the Switch. Then, the files are copied within. To use it:
 
     - Save _switchcp.bat_ on your Desktop.
     - Open the Command Prompt: search for `cmd` in the Start Menu.
